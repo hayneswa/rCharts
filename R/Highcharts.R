@@ -81,7 +81,7 @@ Highcharts <- setRefClass("Highcharts", contains = "rCharts", methods = list(
     
     # Custom add data method
     data = function(..., replace=T) {
-        params$data <<- setListSpec(params$data, ..., replace=replace)
+        params$data <<- setSpec(params$data, ..., replace=replace)
     }
     
 ))
